@@ -12,7 +12,7 @@ body {
   object-fit: cover;
   height: 100%;
   width: 100vw;
-  background-color: brown;
+  background-color: rgb(218, 123, 13);
   z-index: -1;
 }
 
@@ -21,12 +21,13 @@ body {
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  margin: 12% auto;
+  margin: 10% auto;
   text-align: center;
 }
 
 #logo {
   width: 40%;
+  max-width: 900px;
   padding: 1em 0 1em 0;
 }
 
@@ -53,12 +54,28 @@ video {
   text-decoration: none;
   font-weight: bold;
   transition: 0.15s;
+  text-wrap: balance;
 }
 
 #buttons a:hover {
   text-shadow: -1px -1px 0 #999, -1px -1px 0 #999, 1px 1px 0 #999,
     1px 1px 0 #999, 0px 0px 5px #999;
   transform: scale(1.1);
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 1.7rem;
+  filter: invert();
+  margin-left: 1%;
+}
+
+#icons a:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 6px black);
 }
 
 @media (max-width: 600px) {
@@ -68,13 +85,12 @@ video {
     align-items: center;
     height: 100%;
     text-align: center;
-    border: 1px solid black;
   }
 
   #buttons {
     display: inline-block;
     text-align: center;
-    margin-top: 45%;
+    margin-top: 30%;
   }
 
   #buttons a {
@@ -89,6 +105,46 @@ video {
 
   #logo {
     margin-top: 10%;
+    width: 90%;
+    padding: 1em 0 1em 0;
+  }
+
+  #icons {
+    margin-top: 20%;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-height: 500px) {
+  body {
+    overflow: auto;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  #buttons {
+    display: inline-block;
+    text-align: center;
+    margin-top: 25%;
+  }
+
+  #buttons a {
+    display: block;
+    padding: 1.2rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.15s;
+    font-size: larger;
+  }
+
+  #logo {
+    margin-top: 5%;
     width: 90%;
     padding: 1em 0 1em 0;
   }

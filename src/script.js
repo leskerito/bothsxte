@@ -19,5 +19,8 @@ window.addEventListener("resize", () => {
   }
 });
 
+const icons = document.querySelector(".icon");
+icons.fill;
+
 bg.playbackRate = 0.9;
 // bg.play();
