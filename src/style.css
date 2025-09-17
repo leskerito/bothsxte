@@ -79,43 +79,6 @@ video {
 }
 
 @media (max-width: 600px) {
-  #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-  }
-
-  #buttons {
-    display: inline-block;
-    text-align: center;
-    margin-top: 30%;
-  }
-
-  #buttons a {
-    display: block;
-    padding: 1.2rem 1rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.15s;
-    font-size: larger;
-  }
-
-  #logo {
-    margin-top: 10%;
-    width: 90%;
-    padding: 1em 0 1em 0;
-  }
-
-  #icons {
-    margin-top: 20%;
-    gap: 1.2rem;
-  }
-}
-
-@media (max-height: 500px) {
   body {
     overflow: auto;
   }
@@ -130,7 +93,45 @@ video {
   #buttons {
     display: inline-block;
     text-align: center;
-    margin-top: 25%;
+  }
+
+  #buttons a {
+    display: block;
+    padding: 1.2rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.15s;
+    font-size: larger;
+  }
+
+  #logo {
+    width: 90%;
+    padding: 1em 0 1em 0;
+  }
+
+  #icons {
+    margin-top: 20%;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-height: 400px) {
+  body {
+    overflow: auto;
+  }
+  #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  #buttons {
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;
   }
 
   #buttons a {
@@ -147,5 +148,10 @@ video {
     margin-top: 5%;
     width: 90%;
     padding: 1em 0 1em 0;
+  }
+
+  #icons {
+    margin-top: 0;
+    gap: 1.2rem;
   }
 }

@@ -1,5 +1,5 @@
 const bg = document.querySelector("#bg");
-console.log("bg:", bg);
+console.log(window.outerHeight);
 
 window.mobileCheck = window.outerWidth <= 600 ? () => true : () => false;
 console.log("is mobile:", window.mobileCheck());
