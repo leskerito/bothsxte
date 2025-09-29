@@ -23,6 +23,7 @@ body {
   height: fit-content;
   margin: 10% auto;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 #logo {
@@ -72,10 +73,45 @@ video {
   margin-left: 1%;
 }
 
+#ig:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #53e968) drop-shadow(1px 1px 10px #29d640);
+}
+
+#yt:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #4becf1) drop-shadow(1px 1px 10px #33e3e9);
+}
+
+#dc:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #63a14b) drop-shadow(1px 1px 10px #728969);
+}
+
+#sp:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #f547dd) drop-shadow(1px 1px 10px #fc30e1);
+}
+
+#am:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #52fbe2) drop-shadow(1px 1px 10px #6afbe6);
+}
+
+#tt:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  filter: drop-shadow(1px 1px 15px #fe3e42) drop-shadow(1px 1px 10px #fa2f32);
+}
+
 #icons a:hover {
   transform: scale(1.2);
   transition: 0.1s;
-  filter: drop-shadow(1px 1px 6px black);
 }
 
 @media (max-width: 600px) {
