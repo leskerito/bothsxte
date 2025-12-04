@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/news.css" />
+    <title>join the newsletter</title>
+    <style>
+      @font-face {
+        font-family: "font1";
+        src: url("assets/fonts/inktype-map2j.ttf");
+      }
+      @media (max-width: 600px) {
+        a {
+          display: block;
+          margin: 0.5rem 0;
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="newsImgContainer">
+      <img
+        id="newsImg"
+        src="assets/newsletter.png"
+        alt="newsletter cover image"
+      />
+    </div>
+    <div id="container">
+      <a href="index.html" id="back">back to main site</a>
+      <div id="gradient"></div>
+      <div id="newsletterForm">
+        <h1 id="title">join the newsletter</h1>
+        <form action="javascript:;" onsubmit="sendRequest()" id="form">
+          <p id="newsletterMessage">
+            for everything you've continued to give to me, i'd like to bring you
+            into my world even more. sign up for my newsletter to get exclusive
+            content, early access to merch, discounts and a lot more.
+          </p>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="enter your email address"
+            class="newsletter-text-bar"
+            required
+          />
+          <button id="submit" type="submit">send it</button>
+        </form>
+      </div>
+      <div id="icons">
+        <a target="_blank" id="ig" href="https://www.instagram.com/bothsxdes/">
+          <img
+            class="icon"
+            src="assets/icons/icons8-instagram-50.png"
+            alt="instagram icon"
+          />
+        </a>
+        <a target="_blank" id="yt" href="https://www.youtube.com/@bothsxdes">
+          <img
+            class="icon"
+            src="assets/icons/icons8-youtube-50.png"
+            alt="youtube icon"
+          />
+        </a>
+        <a target="_blank" id="dc" href="https://discord.gg/CBvzEbEGFZ">
+          <img
+            class="icon"
+            src="assets/icons/icons8-discorde-50.png"
+            alt="discord icon"
+          />
+        </a>
+        <a
+          target="_blank"
+          id="sp"
+          href="https://open.spotify.com/artist/6Xy9OsGdqsoGwCr8oYnbvT"
+        >
+          <img
+            class="icon"
+            src="assets/icons/icons8-spotify-50.png"
+            alt="spotify icon"
+          />
+        </a>
+        <a
+          target="_blank"
+          id="am"
+          href="https://music.apple.com/fr/artist/bothsxdes/1831490256"
+        >
+          <img
+            class="icon"
+            src="assets/icons/icons8-music-50.png"
+            alt="apple music icon"
+          />
+        </a>
+        <a target="_blank" id="tt" href="https://www.tiktok.com/@bothsxdes">
+          <img
+            class="icon"
+            src="assets/icons/icons8-tiktok-50.png"
+            alt="tiktok icon"
+          />
+        </a>
+      </div>
+      <div class="message" id="data"></div>
+    </div>
+    <script defer src="src/script.js">
+      const email = ""
+      const fname = ""
+
+      function sendRequest(){
+        email = document.querySelector("#email").textContent
+        if (document.querySelector("#firstName")){
+          //send the post request using all the info needed
+          return true
+        }
+        const child = document.querySelector("#email")
+        const parent = document.querySelector("#form")
+        const newBar = document.createElement("input")
+        newBar.type = "text"
+        newBar.id = "firstName"
+        newBar.name = "name"
+        newBar.placeholder = "what should i call you?"
+        newBar.className = "newsletter-text-bar"
+        newBar.required = true
+        document.querySelector("#newsletterMessage").textContent = "one more step and we're done."
+      }
+    </script>
+  </body>
+</html>
