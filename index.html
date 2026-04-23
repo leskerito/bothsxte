@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta property="og:image" content="your-image-url.png" />
@@ -27,7 +27,7 @@
     </style>
   </head>
   <body>
-    <video autoplay muted loop playsinline id="bg"></video>
+    <video autoplay muted loop playsinline poster="" id="bg"></video>
     <div id="container">
       <img id="logo" src="assets/bothsxdeslogo.png" alt="bothsxdes logo" />
       <span id="buttons">
@@ -35,7 +35,7 @@
           class="main-buttons"
           target="_blank"
           href="https://open.spotify.com/artist/6Xy9OsGdqsoGwCr8oYnbvT"
-          >music</a
+          >listen</a
         >
         <!-- <a class="main-buttons" href="#merch">merch (coming soon)</a> -->
         <a class="main-buttons" href="https://laylo.com/bothsxdes"
@@ -101,11 +101,11 @@
     window.mobileCheck = window.outerWidth <= 600 ? () => true : () => false;
     if (window.mobileCheck()) {
       bg.src = "assets/bgvidvertical.mp4";
+      bg.poster = "assets/falloutpicvertical.png";
     } else {
       bg.src = "assets/bgvid.mp4";
+      bg.poster = "assets/falloutpic.png";
     }
-
-    console.log(bg);
 
     window.addEventListener("resize", () => {
       if (window.mobileCheck()) {
