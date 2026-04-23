@@ -27,7 +27,7 @@
     </style>
   </head>
   <body>
-    <video autoplay muted loop playsinline id="bg"></video>
+    <video autoplay muted loop playsinline poster="" id="bg"></video>
     <div id="container">
       <img id="logo" src="assets/bothsxdeslogo.png" alt="bothsxdes logo" />
       <span id="buttons">
@@ -101,8 +101,10 @@
     window.mobileCheck = window.outerWidth <= 600 ? () => true : () => false;
     if (window.mobileCheck()) {
       bg.src = "assets/bgvidvertical.mp4";
+      bg.poster = "assets/falloutpicvertical.png";
     } else {
       bg.src = "assets/bgvid.mp4";
+      bg.poster = "assets/falloutpic.png";
     }
 
     window.addEventListener("resize", () => {
