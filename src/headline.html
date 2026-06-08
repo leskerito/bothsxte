@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>thank you so muchhhhh</title>
+    <meta
+      name="description"
+      content="Landing page for scanning the qr code to our headline show."
+    />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="headline.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://iframe.chat/scripts/main.min.js"></script>
+  </head>
+  <body>
+    <div id="mainPage" class="container">
+      <section id="leftside" class="side">
+        <fieldset class="box" id="randomquote">
+          <legend>iroh's wisdom</legend>
+          <p id="quote"></p>
+        </fieldset>
+        <fieldset class="box" id="animations1">
+          <legend>brainrot</legend>
+          <img src="" id="brainrot" />
+        </fieldset>
+        <fieldset class="box" id="bsxspotify">
+          <legend>my spotify</legend>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/artist/6Xy9OsGdqsoGwCr8oYnbvT?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </fieldset>
+      </section>
+      <main class="container" role="main">
+        <div id="hello" class="box">
+          <h2 class="box-title">what is this</h2>
+          <p>
+            hello!! thank you for scanning my qr code!! i made this poster with
+            my friend dréa to get people interested in our show happening on the
+            25th of June!! <br />i'm hoping the little animations around the
+            page are enough to distract you while you're reading this :p
+          </p>
+        </div>
+        <a
+          href="https://link.dice.fm/G1b3f1480748?dice_id=G1b3f1480748"
+          target="_blank"
+          class="ticketbutton animate__animated animate__tada animate__delay-2s"
+          id="buy"
+          >BUY A SHOW TICKET
+        </a>
+        <div id="presentation" class="box">
+          <h2 class="box-title">who are we</h2>
+          <p>
+            im bothsxdes (pronounced "both sides"), an indie rock artist based
+            between paris and london. my music is a blend of indie rock with a
+            lot of my personal influences, like weezer and dominic fike but also
+            underscores and clairo!! the day of the show, i'll also be releasing
+            my first ep "wholehearted". it's a very personal project and i'll be
+            playing it live for the first time at that show!!
+            <br />
+            to help me with this monumental task, my friend dréa szn will be
+            opening for me!! she's an incredibly talented singer and songwriter
+            from Essex that makes gorgeous alt rock. if you're into radiohead,
+            nirvana, wisp or soundgarden, you're gonna LOVE her stuff and she's
+            such an incredible singer too i swear i love her music so much
+          </p>
+        </div>
+        <div id="stamps-scroll">
+          <div id="stamps" class="stamp-box"></div>
+          <div id="stamps2" class="stamp-box"></div>
+        </div>
+        <div id="theshow" class="box">
+          <h2 class="box-title">the show</h2>
+          <p>
+            the show is happening on the 25th of June at Folklore Hoxton in
+            London!! it's a very intimate venue and we're so excited to be
+            playing there!! it's at 7:30pm and tickets are only 8 pounds!! you
+            can get them right after little samples of our music. the reason we
+            made this is to give ppl the opportunity to listen to us first and
+            decide if they wanna come or not. if you don't, absolutely no hard
+            feelings, we're already really happy you stopped by!!
+          </p>
+        </div>
+        <a
+          href="https://link.dice.fm/G1b3f1480748?dice_id=G1b3f1480748"
+          target="_blank"
+          class="ticketbutton animate__animated animate__tada animate__delay-2s"
+          id="imin"
+          >ALRIGHT, I'M IN
+        </a>
+      </main>
+      <section id="rightside" class="side">
+        <fieldset class="box" id="counter">
+          <legend>visitor #</legend>
+          <p>
+            congrats!! you're visitor number <br />
+            <span id="visitor-count">0</span> <br />we didn't expect so
+            many........
+          </p>
+        </fieldset>
+        <div class="box" id="themeswitch">
+          <button id="theme-button" onclick="switchTheme()">
+            switch theme
+          </button>
+        </div>
+        <fieldset class="box" id="chat">
+          <legend>chat</legend>
+          <iframe src="https://iframe.chat/embed?chat=qrcodebsx" id="chattable">
+          </iframe>
+        </fieldset>
+        <fieldset class="box" id="dreasspotify">
+          <legend>dréa's spotify</legend>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/artist/1lM5FtAg6cKvJAKTffvKSc?utm_source=generator"
+            width="100%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </fieldset>
+      </section>
+      <script src="script.js"></script>
+
+      <script>
+        chattable.initialize({
+          stylesheet: "chattable.css", // set the value to the name of the theme
+        });
+      </script>
+    </div>
+  </body>
+</html>
