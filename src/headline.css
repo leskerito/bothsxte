@@ -30,6 +30,15 @@ body.dark {
   font-size: 10px;
 }
 
+#thankyou {
+  width: 70%;
+}
+
+#thankyouimage {
+  max-width: 1000px;
+  width: 100%;
+}
+
 .ticketbutton {
   display: flex;
   text-align: center;
@@ -59,10 +68,15 @@ body.dark {
 
 #mainPage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 0 10% 0 10%;
   max-width: 1300px;
   margin: 0 auto;
+  justify-content: center;
+}
+
+#thankyoutext {
+  text-align: center;
 }
 
 #brainrot {

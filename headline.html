@@ -9,7 +9,7 @@
       content="Landing page for scanning the qr code to our headline show."
     />
     <link rel="icon" href="/favicon.ico" />
-    <link rel="stylesheet" href="headline.css" />
+    <link rel="stylesheet" href="src/headline.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -18,6 +18,12 @@
   </head>
   <body>
     <div id="mainPage" class="container">
+      <fieldset class="box" id="thankyou">
+        <legend>we did it!</legend>
+        <img src="assets/finalimage.jpg" id="thankyouimage"/>
+      </fieldset>
+      <h1 id="thankyoutext">Thank you for coming to watch us sing!</h1>
+       <!--
       <section id="leftside" class="side">
         <fieldset class="box" id="randomquote">
           <legend>iroh's wisdom</legend>
@@ -82,10 +88,6 @@
             such an incredible singer too i swear i love her music so much
           </p>
         </div>
-        <div id="stamps-scroll">
-          <div id="stamps" class="stamp-box"></div>
-          <div id="stamps2" class="stamp-box"></div>
-        </div>
         <div id="theshow" class="box">
           <h2 class="box-title">the show</h2>
           <p>
@@ -115,11 +117,6 @@
             many........
           </p>
         </fieldset>
-        <div class="box" id="themeswitch">
-          <button id="theme-button" onclick="switchTheme()">
-            switch theme
-          </button>
-        </div>
         <fieldset class="box" id="chat">
           <legend>chat</legend>
           <iframe src="https://iframe.chat/embed?chat=qrcodebsx" id="chattable">
@@ -153,6 +150,8 @@
           stylesheet: "chattable.css", // set the value to the name of the theme
         });
       </script>
+      -->
+      </main>
     </div>
   </body>
 </html>
