@@ -5,7 +5,11 @@ body {
   box-sizing: border-box;
   font-family: "font1", sans-serif;
   font-size: 1.5rem;
-  background-color: black;
+  background-color: #e94d51;
+  background: url("../assets/desktopppimg.png") no-repeat center center fixed;
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 
 #bg {
@@ -21,7 +25,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  margin: 10% auto;
+  margin: 0 auto;
   text-align: center;
   justify-content: space-evenly;
 }
@@ -114,12 +118,16 @@ video {
     overflow: auto;
     margin: 0;
     padding: 0;
+    background: url("../assets/mobileppbg.png") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
   }
   #container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     text-align: center;
     justify-content: space-evenly;
   }
@@ -161,6 +169,7 @@ video {
     padding: 1em;
     margin: 0;
     justify-content: space-evenly;
+    width: 80%;
   }
 
   #buttons {
